@@ -1,7 +1,7 @@
 ---
 date: '2021-11-30'
 title: 'Backend Developer Intern'
-company: 'Mentofy'
+company: 'Prixled Tech'
 location: 'Mumbai, India'
 range: 'September 2021 - November 2021'
 url: 'https://www.prixled.com/'
