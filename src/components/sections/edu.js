@@ -243,7 +243,7 @@ const Edu = () => {
   };
 
   return (
-    <StyledJobsSection id="jobs" ref={revealContainer}>
+    <StyledJobsSection id="education" ref={revealContainer}>
       <h2 className="numbered-heading">What I study</h2>
 
       <div className="inner">
