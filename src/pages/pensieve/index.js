@@ -142,91 +142,91 @@ const StyledPost = styled.li`
   }
 `;
 
-const PensievePage = ({ location, data }) => {
-  const posts = data.allMarkdownRemark.edges;
+// const PensievePage = ({ location, data }) => {
+//   const posts = data.allMarkdownRemark.edges;
 
-  return (
-    <Layout location={location}>
-      <Helmet title="Pensieve" />
+//   return (
+//     <Layout location={location}>
+//       <Helmet title="Pensieve" />
 
-      <StyledMainContainer>
-        <header>
-          <h1 className="big-heading">Pensieve</h1>
-          <p className="subtitle">
-            <a href="https://www.wizardingworld.com/writing-by-jk-rowling/pensieve">
-              a collection of memories
-            </a>
-          </p>
-        </header>
+//       <StyledMainContainer>
+//         <header>
+//           <h1 className="big-heading">Pensieve</h1>
+//           <p className="subtitle">
+//             <a href="https://www.wizardingworld.com/writing-by-jk-rowling/pensieve">
+//               a collection of memories
+//             </a>
+//           </p>
+//         </header>
 
-        <StyledGrid>
-          {posts.length > 0 &&
-            posts.map(({ node }, i) => {
-              const { frontmatter } = node;
-              const { title, description, slug, date, tags } = frontmatter;
-              const formattedDate = new Date(date).toLocaleDateString();
+//         <StyledGrid>
+//           {posts.length > 0 &&
+//             posts.map(({ node }, i) => {
+//               const { frontmatter } = node;
+//               const { title, description, slug, date, tags } = frontmatter;
+//               const formattedDate = new Date(date).toLocaleDateString();
 
-              return (
-                <StyledPost key={i}>
-                  <div className="post__inner">
-                    <header>
-                      <div className="post__icon">
-                        <IconBookmark />
-                      </div>
-                      <h5 className="post__title">
-                        <Link to={slug}>{title}</Link>
-                      </h5>
-                      <p className="post__desc">{description}</p>
-                    </header>
+//               return (
+//                 <StyledPost key={i}>
+//                   <div className="post__inner">
+//                     <header>
+//                       <div className="post__icon">
+//                         <IconBookmark />
+//                       </div>
+//                       <h5 className="post__title">
+//                         <Link to={slug}>{title}</Link>
+//                       </h5>
+//                       <p className="post__desc">{description}</p>
+//                     </header>
 
-                    <footer>
-                      <span className="post__date">{formattedDate}</span>
-                      <ul className="post__tags">
-                        {tags.map((tag, i) => (
-                          <li key={i}>
-                            <Link to={`/pensieve/tags/${kebabCase(tag)}/`} className="inline-link">
-                              #{tag}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </footer>
-                  </div>
-                </StyledPost>
-              );
-            })}
-        </StyledGrid>
-      </StyledMainContainer>
-    </Layout>
-  );
-};
+//                     <footer>
+//                       <span className="post__date">{formattedDate}</span>
+//                       <ul className="post__tags">
+//                         {tags.map((tag, i) => (
+//                           <li key={i}>
+//                             <Link to={`/pensieve/tags/${kebabCase(tag)}/`} className="inline-link">
+//                               #{tag}
+//                             </Link>
+//                           </li>
+//                         ))}
+//                       </ul>
+//                     </footer>
+//                   </div>
+//                 </StyledPost>
+//               );
+//             })}
+//         </StyledGrid>
+//       </StyledMainContainer>
+//     </Layout>
+//   );
+// };
 
-PensievePage.propTypes = {
-  location: PropTypes.object.isRequired,
-  data: PropTypes.object.isRequired,
-};
+// PensievePage.propTypes = {
+//   location: PropTypes.object.isRequired,
+//   data: PropTypes.object.isRequired,
+// };
 
-export default PensievePage;
+// export default PensievePage;
 
-export const pageQuery = graphql`
-  {
-    allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/content/posts/" }, frontmatter: { draft: { ne: true } } }
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
-      edges {
-        node {
-          frontmatter {
-            title
-            description
-            slug
-            date
-            tags
-            draft
-          }
-          html
-        }
-      }
-    }
-  }
-`;
+// export const pageQuery = graphql`
+//   {
+//     allMarkdownRemark(
+//       filter: { fileAbsolutePath: { regex: "/content/posts/" }, frontmatter: { draft: { ne: true } } }
+//       sort: { fields: [frontmatter___date], order: DESC }
+//     ) {
+//       edges {
+//         node {
+//           frontmatter {
+//             title
+//             description
+//             slug
+//             date
+//             tags
+//             draft
+//           }
+//           html
+//         }
+//       }
+//     }
+//   }
+// `;
