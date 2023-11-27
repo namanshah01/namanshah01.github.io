@@ -7,5 +7,6 @@ range: 'September 2021 - November 2021'
 url: 'https://www.prixled.com/'
 ---
 
-- Finalized execution model for a new website, developed frontend using ReactJS, and leveraged Django backend to automate real-time information on events page, completely eliminating manual updates
-- Implemented AJAX powered search suggestions, elevating app usage by 80% via improved event archive access
+- Planned and delivered complex logic implementations using Django Rest Framework, prioritizing features based on client requirements
+- Set up servers on  EC2, RDS, S3, also configured Nginx server with reverse proxy and DNS through Route 53
+- Launched final beta release of application, migrating complete to AWS servers, resulting in a 67% reduction in response times

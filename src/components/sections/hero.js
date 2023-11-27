@@ -65,13 +65,13 @@ const Hero = () => {
   const four = (
     <>
       <p>
-        I’m a software engineer who enjoys solving complex problems and working with database structures of applications.
-				Currently, I’m pursuing Masters in Computer Sciecne
-        at{' '}
-        <a href="https://www.stonybrook.edu/" target="_blank" rel="noreferrer">
+				I'm a Software Developer and a CS grad at{' '}
+				<a href="https://www.stonybrook.edu/" target="_blank" rel="noreferrer">
           Stony Brook University
-        </a>
-        .
+        </a>.
+				I enjoy solving complex problems and 
+				crafting solutions that address real-world challenges.
+				Occasionally, I spend hours looking for missing semi-colons :)
       </p>
     </>
   );

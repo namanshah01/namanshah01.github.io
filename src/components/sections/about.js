@@ -125,7 +125,13 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = [
+		'C++', 'Python', 'C#', 'JavaScript', 'Linux/Unix', 'Bash', 'Tensorflow', 'PyTorch', 'AWS', 'Django','Flask', '.NET', 'Node', 'ReactJs', 'AngularJs', 'NoSQL', 'SQL', 'Neo4j', 'Git', 'BitBucket', 'JIRA', 'Confluence'
+	];
+	// C, C++, Python, C#, JavaScript, Problem Solving, Django, Django Rest Framework, .NET,
+	// Entity Framework, LINQ, Flask, Node, ReactJs, AngularJs, AJAX, Database Design, SQL, MSSQL
+	// PostgreSQL, MySQL, MongoDb, Neo4j, AWS, EC2, S3, Route 53, RDS, Cloud, Git, BitBucket
+	// Confluence, JIRA, Linux, Shell, Ubuntu, Docker, Tensorflow, PyTorch, Data Analytics
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -135,33 +141,18 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+							Currently I'm a Teaching Assistant under{' '}
+							<a href="https://www3.cs.stonybrook.edu/~richard/">Prof. Richard McKenna</a> for{' '}
+							<a href="https://www3.cs.stonybrook.edu/~cse416/Sections02and03/">CSE 416 Software Engineering</a>.{' '}
+              Previously, I’ve had the privilege of interning at{' '}
+              <a href="https://www.barclays.in/">Barclays</a>,{' '}
+              <a href="https://www.prixled.com/">Prixled Tech</a>{' '}
+							along with a couple more companies in Software Development and Data Science roles.{' '}
+							Beyond work, I'm committed to personal growth and knowledge sharing, notably with{' '}
+							<a href="https://www.kjscecodecell.com/">KJSCE CodeCell</a>.{' '}
             </p>
 
-            <p>
-              Fast-forward to today, and I’ve had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
-            </p>
-
-            <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
-            </p>
-
-            <p>Here are a few technologies I’ve been working with recently:</p>
+            <p>Here are a few technologies I’m experienced in:</p>
           </div>
 
           <ul className="skills-list">

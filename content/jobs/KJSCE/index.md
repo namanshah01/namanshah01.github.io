@@ -7,6 +7,6 @@ range: 'October 2020 - January 2021'
 url: 'https://kjsce.somaiya.edu/en'
 ---
 
-- Worked under HOD IT to conduct in-depth analysis on COVID patient data from Somaiya Hospital
-- Transformed unstructured data from hospital forms into a clean and accessible dataset
-- Leveraged several libraries to perform a wide range of computations, generating informative visualizations, and identifying significant data patterns
+- Leveraged OCR technology and developed custom scripts to convert the University's Hospital form data into accessible dataset
+- Defined a consensus for each record using similar oximetry measures and clustered patient data using K-Means forming distinct groups of symptoms
+- Utilized several libraries to perform range of computations, generate informative visualizations, and identify significant data patterns

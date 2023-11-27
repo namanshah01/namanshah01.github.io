@@ -196,6 +196,12 @@ const Projects = () => {
   const revealProjects = useRef([]);
   const prefersReducedMotion = usePrefersReducedMotion();
 
+	const handleExternalLink = () => {
+		window.open('https://github.com/namanshah01/', '_blank');
+
+  };
+
+
   useEffect(() => {
     if (prefersReducedMotion) {
       return;
@@ -302,8 +308,12 @@ const Projects = () => {
         )}
       </ul>
 
-      <button className="more-button" onClick={() => setShowMore(!showMore)}>
+      {/* <button className="more-button" onClick={() => setShowMore(!showMore)}>
         Show {showMore ? 'Less' : 'More'}
+      </button> */}
+
+			<button className="more-button" onClick={handleExternalLink}>
+        Show More
       </button>
     </StyledProjectsSection>
   );
