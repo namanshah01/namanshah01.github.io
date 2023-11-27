@@ -65,7 +65,7 @@ const Hero = () => {
   const four = (
     <>
       <p>
-				I'm a Software Developer and a CS grad at{' '}
+				I'm a <a>Software Developer</a> and a Computer Science grad student at{' '}
 				<a href="https://www.stonybrook.edu/" target="_blank" rel="noreferrer">
           Stony Brook University
         </a>.
