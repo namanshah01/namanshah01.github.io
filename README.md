@@ -40,7 +40,8 @@
    npm run serve
    ```
 
-<h3 align="center">Theme by <a href="https://github.com/bchiang7">Brittany Chiang</a></h3>
+<h4 align="center">Theme by <a href="https://github.com/bchiang7">Brittany Chiang</a></h4>
 
 ---
+
 <h3 align="center"><b>Developed with :heart: by <a href="https://github.com/namanshah01">Naman Shah</a></b></h3>
