@@ -1,5 +1,22 @@
 # Portfolio Website
 
+## 🛠 Modify Portfolio
+
+1. Dependencies and Run
+
+```sh
+rm -rf node_modules package-lock.json
+npm install --force
+npm start
+```
+
+2. Deploy
+
+```sh
+gatsby build
+npm run deploy
+```
+
 ## 🛠 Installation & Set Up
 
 1. Install the Gatsby CLI

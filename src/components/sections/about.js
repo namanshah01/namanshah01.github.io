@@ -126,7 +126,7 @@ const About = () => {
   }, []);
 
   const skills = [
-		'C++', 'Python', 'C#', 'JavaScript', 'Linux/Unix', 'Bash', 'Tensorflow', 'PyTorch', 'AWS', 'Django','Flask', '.NET', 'Node', 'ReactJs', 'AngularJs', 'NoSQL', 'SQL', 'Neo4j', 'Git', 'BitBucket', 'JIRA', 'Confluence'
+		'Go', 'Python', 'C++', 'C#', 'Linux/Unix', 'Bash', 'AWS', 'Splunk', 'Kafka', 'Tensorflow', 'PyTorch', 'Django', '.NET', 'Node', 'ReactJs', 'AngularJs', 'NoSQL', 'SQL', 'Neo4j', 'Git', 'JIRA', 'Confluence'
 	];
 	// C, C++, Python, C#, JavaScript, Problem Solving, Django, Django Rest Framework, .NET,
 	// Entity Framework, LINQ, Flask, Node, ReactJs, AngularJs, AJAX, Database Design, SQL, MSSQL
@@ -141,13 +141,14 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-							Currently I'm a Teaching Assistant under{' '}
-							<a href="https://www3.cs.stonybrook.edu/~richard/">Prof. Richard McKenna</a> for{' '}
-							<a href="https://www3.cs.stonybrook.edu/~cse416/Sections02and03/">CSE 416 Software Engineering</a>.{' '}
-              Previously, I’ve had the privilege of interning at{' '}
-              <a href="https://www.barclays.in/">Barclays</a>,{' '}
-              <a href="https://www.prixled.com/">Prixled Tech</a>{' '}
-							along with a couple more companies in Software Development and Data Science roles.{' '}
+							Currently, I'm doing research under{' '}
+							<a href="https://www3.cs.stonybrook.edu/~mueller/">Prof. Klaus Mueller</a> exploring applications of Diffusion Models on medical data.{' '}
+              My recent work at{' '}
+              <a href="https://www.tesla.com/">Tesla Motors</a> and a couple more firms like{' '}
+              <a href="https://www.barclays.in/">Barclays</a> and{' '}
+              <a href="https://www.prixled.com/">Prixled</a>{' '}
+							have given me great opportunities to create real-world impact and become a better{' '}
+              <a>Software Engineer</a>.{' '}
 							Beyond work, I'm committed to personal growth and knowledge sharing, notably with{' '}
 							<a href="https://www.kjscecodecell.com/">KJSCE CodeCell</a>.{' '}
             </p>
