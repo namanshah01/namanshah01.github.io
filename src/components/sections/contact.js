@@ -60,7 +60,8 @@ const Contact = () => {
       <h2 className="title">Get In Touch</h2>
 
       <p>
-				While continuing my journey of learning and growth at Stony Brook, I'm actively seeking Software Development Engineer (SDE) internship opportunities for Summer 2024. Feel free to get in touch!
+        While continuing my journey of learning and growth, I'm always open to
+        discussing new tech and sharing insights. Feel free to get in touch!
       </p>
 
       <a className="email-link" href={`mailto:${email}`}>

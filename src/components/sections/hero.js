@@ -67,7 +67,7 @@ const Hero = () => {
       <p>
         I'm a{' '}
         <a href="https://youtu.be/dQw4w9WgXcQ?si=WA5WLqEAdxJYYoJP">
-          Software Developer
+          Software Engineer
         </a>{' '}
         and a Computer Science grad from{' '}
         <a href="https://www.stonybrook.edu/" target="_blank" rel="noreferrer">
