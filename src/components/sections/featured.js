@@ -138,7 +138,7 @@ const StyledProject = styled.li`
         position: static;
 
         &:before {
-          content: '';
+          content: "";
           display: block;
           position: absolute;
           z-index: 0;
@@ -273,7 +273,7 @@ const StyledProject = styled.li`
       }
 
       &:before {
-        content: '';
+        content: "";
         position: absolute;
         width: 100%;
         height: 100%;
@@ -316,7 +316,11 @@ const Featured = () => {
               title
               cover {
                 childImageSharp {
-                  gatsbyImageData(width: 700, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+                  gatsbyImageData(
+                    width: 700
+                    placeholder: BLURRED
+                    formats: [AUTO, WEBP, AVIF]
+                  )
                 }
               }
               tech
@@ -342,7 +346,9 @@ const Featured = () => {
     }
 
     sr.reveal(revealTitle.current, srConfig());
-    revealProjects.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 100)));
+    revealProjects.current.forEach((ref, i) =>
+      sr.reveal(ref, srConfig(i * 100)),
+    );
   }, []);
 
   return (
@@ -355,11 +361,14 @@ const Featured = () => {
         {featuredProjects &&
           featuredProjects.map(({ node }, i) => {
             const { frontmatter, html } = node;
-            const { external, title, tech, github, cover, cta } = frontmatter;
+            const { external, title, tech, github, cover } = frontmatter;
             const image = getImage(cover);
 
             return (
-              <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
+              <StyledProject
+                key={i}
+                ref={el => (revealProjects.current[i] = el)}
+              >
                 <div className="project-content">
                   <div>
                     <p className="project-overline">Featured Project</p>
@@ -392,8 +401,12 @@ const Featured = () => {
                           <Icon name="GitHub" />
                         </a>
                       )}
-                      {external && !cta && (
-                        <a href={external} aria-label="External Link" className="external">
+                      {external && (
+                        <a
+                          href={external}
+                          aria-label="External Link"
+                          className="external"
+                        >
                           <Icon name="External" />
                         </a>
                       )}
