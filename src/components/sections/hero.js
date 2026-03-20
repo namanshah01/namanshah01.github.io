@@ -65,13 +65,17 @@ const Hero = () => {
   const four = (
     <>
       <p>
-				I'm a <a>Software Developer</a> and a Computer Science grad at{' '}
-				<a href="https://www.stonybrook.edu/" target="_blank" rel="noreferrer">
+        I'm a{' '}
+        <a href="https://youtu.be/dQw4w9WgXcQ?si=WA5WLqEAdxJYYoJP">
+          Software Developer
+        </a>{' '}
+        and a Computer Science grad from{' '}
+        <a href="https://www.stonybrook.edu/" target="_blank" rel="noreferrer">
           Stony Brook University
-        </a>.
-				I enjoy solving complex problems and 
-				crafting solutions that address real-world challenges.
-				Occasionally, I spend hours looking for missing semi-colons :)
+        </a>
+        . I enjoy solving complex problems and crafting solutions that address
+        real-world challenges. Occasionally, I spend hours looking for missing
+        semi-colons :)
       </p>
     </>
   );

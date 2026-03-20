@@ -36,7 +36,7 @@ const StyledText = styled.div`
       font-size: var(--fz-xs);
 
       &:before {
-        content: '▹';
+        content: "▹";
         position: absolute;
         left: 0;
         color: var(--green);
@@ -88,7 +88,7 @@ const StyledPic = styled.div`
 
     &:before,
     &:after {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       width: 100%;
@@ -126,12 +126,27 @@ const About = () => {
   }, []);
 
   const skills = [
-		'Go', 'Python', 'C++', 'C#', 'Linux/Unix', 'Bash', 'AWS', 'Splunk', 'Kafka', 'Tensorflow', 'PyTorch', 'Django', '.NET', 'Node', 'ReactJs', 'AngularJs', 'NoSQL', 'SQL', 'Neo4j', 'Git', 'JIRA', 'Confluence'
-	];
-	// C, C++, Python, C#, JavaScript, Problem Solving, Django, Django Rest Framework, .NET,
-	// Entity Framework, LINQ, Flask, Node, ReactJs, AngularJs, AJAX, Database Design, SQL, MSSQL
-	// PostgreSQL, MySQL, MongoDb, Neo4j, AWS, EC2, S3, Route 53, RDS, Cloud, Git, BitBucket
-	// Confluence, JIRA, Linux, Shell, Ubuntu, Docker, Tensorflow, PyTorch, Data Analytics
+    'Distributed Systems',
+    'Operating Systems',
+    'Disk Management',
+    'Computer Networks',
+    'Python',
+    'C++',
+    'Go',
+    'Linux/Unix',
+    'Protobuf',
+    'Docker',
+    'AWS',
+    'Splunk',
+    'Kafka',
+    'NoSQL',
+    'SQL',
+    'Version Control',
+  ];
+  // C, C++, Python, C#, JavaScript, Problem Solving, Django, Django Rest Framework, .NET,
+  // Entity Framework, LINQ, Flask, Node, ReactJs, AngularJs, AJAX, Database Design, SQL, MSSQL
+  // PostgreSQL, MySQL, MongoDb, Neo4j, AWS, EC2, S3, Route 53, RDS, Cloud, Git, BitBucket
+  // Confluence, JIRA, Linux, Shell, Ubuntu, Docker, Tensorflow, PyTorch, Data Analytics
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -141,19 +156,26 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-							Currently, I'm doing research under{' '}
-							<a href="https://www3.cs.stonybrook.edu/~mueller/">Prof. Klaus Mueller</a> exploring applications of Diffusion Models on medical data.{' '}
-              My recent work at{' '}
-              <a href="https://www.tesla.com/">Tesla Motors</a> and a couple more firms like{' '}
-              <a href="https://www.barclays.in/">Barclays</a> and{' '}
-              <a href="https://www.prixled.com/">Prixled</a>{' '}
-							have given me great opportunities to create real-world impact and become a better{' '}
-              <a>Software Engineer</a>.{' '}
-							Beyond work, I'm committed to personal growth and knowledge sharing, notably with{' '}
-							<a href="https://www.kjscecodecell.com/">KJSCE CodeCell</a>.{' '}
+              Currently, I'm working at{' '}
+              <a href="https://www.nutanix.com/">Nutanix</a> in the Core Data
+              Path team, expanding my expertise in Disk Management and
+              Distributed Systems. My previous experience spans roles at{' '}
+              <a href="https://www.tesla.com/">Tesla Motors</a> and{' '}
+              <a href="https://www.barclays.in/">Barclays</a>, where I navigated
+              the complexities of large-scale Manufacturing Engineering Systems
+              and Fintech. <br />
+              <br />
+              Driven by a competitive nature, I frequently participate in
+              hackathons. Beyond work, I'm committed to personal growth and
+              knowledge sharing, notably with{' '}
+              <a href="https://www3.cs.stonybrook.edu/~mueller/">
+                Prof. Klaus Mueller
+              </a>{' '}
+              in the VAI Lab at Stony Brook University and{' '}
+              <a href="https://www.kjscecodecell.com/">KJSCE CodeCell</a>.
             </p>
 
-            <p>Here are a few technologies I’m experienced in:</p>
+            <p>Few technologies I’m experienced in:</p>
           </div>
 
           <ul className="skills-list">

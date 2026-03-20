@@ -1,10 +1,10 @@
 ---
-date: '2'
-title: 'Question Bag Generator'
-cover: './QBaG.png'
-github: 'https://github.com/Team-Executables/qbag-backend'
-external: 'https://github.com/Team-Executables/qbag-backend'
-cta: 'temp'
+date: "3"
+title: "QBaG (Finalist @ SIH 2022)"
+cover: "./QBaG.png"
+github: "https://github.com/Team-Executables/qbag-backend"
+external: "https://github.com/Team-Executables/qbag-backend"
+cta: "temp"
 tech:
   - Django REST
   - Simple JWT
